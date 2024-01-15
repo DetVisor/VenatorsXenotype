@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeDef>
+    <defName>DV_Venator</defName>
+    <label>venator</label>
+    <description>Venators are incredibly capable hunters and sharpshooters, adapted to taking down giant prey and curious outsiders on their tropical homeworld. This is thanks to their incredible farsight, which comes at the cost of being unequipped for melee and short-range combat. Their agile bodies and strong legs allow them to quickly reposition during combat, being capable of taking down large foes on their own. If an organic enemy ever gets too close, they can utilize their hidden venom secretion glands to inject a paralyzing neurotoxin into the body of a target, temporarily incapacitating them to either escape or to turn them into their next meal.\n\nDescending from a lost colony-ship that landed on a tropical jungleworld, Venators swiftly adapted to the tight fauna-saturated environment, developing agile sleek bodies that can run through and past thick flora, and complex eyes that can focus in on faraway prey even in the dark. This lifestyle of hunting and gathering eventually evolved into a rigid hunting culture that persists even today in more civilized Venators; due to this, many Venators find themselves filling the roles of bounty hunters, hitmen, mercenaries, and assassins, sniping the political enemies of dukes with the same vigor they'd once take down deer or elephants with. Without a doubt, these fast and deadly sharpshooters are not to be messed with, lest you find yourself tied up in their den, ready to be turned into their next piece of furniture.</description>
+    <descriptionShort>Venators are incredibly capable hunters and sharpshooters, adapted to taking down giant prey and curious outsiders on their tropical homeworld. This is thanks to their incredible farsight, which comes at the cost of being unequipped for melee and short-range combat. Their agile bodies and strong legs allow them to quickly reposition during combat, being capable of taking down large foes on their own. If an organic enemy ever gets too close, they can utilize their hidden venom secretion glands to inject a paralyzing neurotoxin into the body of a target, temporarily incapacitating them to either escape or to turn them into their next meal.</descriptionShort>
+    <iconPath>UI/Xenotypes/XenoIcon</iconPath>
+    <inheritable>true</inheritable>
+	<nameMaker>NamerPersonImpid</nameMaker>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <genes>
+	  <li>MoveSpeed_Quick</li>
+	  <li>DV_Farsighted</li>
+    <li>DV_HunterInstincts</li>
+    <li>DarkVision</li>
+    <li>Delicate</li>
+	  <li>MaxTemp_SmallIncrease</li>
+	  <li>Beard_NoBeardOnly</li>
+    <li>Hair_BaldOnly</li>
+    <li>Head_Gaunt</li>
+    <li>AptitudeRemarkable_Shooting</li>
+	  <li>AptitudeTerrible_Cooking</li>
+	  <li>AptitudePoor_Plants</li>
+    <li>AptitudePoor_Artistic</li>
+    <li>DV_ParalyzingFangs</li>
+	  <li>Body_Standard</li>
+    <li>Body_Thin</li>
+	  <li>PsychicAbility_Deaf</li>
+	  <li>Sleepy</li>
+	  <li>DV_FacePlating</li>
+    <li>DV_Ears_Downturned</li>
+	  <li>Skin_PurpleGray</li>
+	  <li>Skin_RedGray</li>
+	  <li>Skin_BlueGray</li>
+    <li>Skin_YellowGray</li>
+	  <li>Skin_BrownGray</li>
+	  <li>Aggression_Aggressive</li>
+	  <li>RobustDigestion</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>
