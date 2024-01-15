@@ -4,7 +4,7 @@
     <ThingDef MayRequire="smartkar.athenaframework" ParentName="BaseHumanMakeableGun">
         <defName>DV_Gun_PrecisionLongrifle</defName>
         <label>precision longrifle</label>
-        <description>An incredibly advanced long-range sniper rifle utilized commonly by Venator bounty hunters across the rim. The ultra-zoom scope is pain-stakingly modified and fitted for the complex eyes of people with the Farsight gene , allowing only them to utilize it. The high caliber cartridges combined with the ridiculously long barrel and scope of this weapon allow it to fire at targets from nearly miles away, thus it is the weapon of choice for political assassinations and mercenay snipers.n\n\Due to the weapon's sheer size and weight, it is slow to aim and it is hard to move with when equipped.</description>
+        <description>An incredibly advanced long-range sniper rifle commonly utilized by Venator bounty hunters across the rim. The ultra-zoom scope is painstakingly modified and fitted for the complex eyes of people with the Farsight gene, preventing those without the gene from using it. The high caliber cartridges combined with the ridiculously long barrel and scope of this weapon allow it to fire at targets from absurd ranges, making it the weapon of choice for discrete assassins and mercenary snipers alike.n\n\Due to the weapon's sheer size and weight, it is slow to aim and hard to move with when equipped.</description>
         <equippedAngleOffset>45</equippedAngleOffset>
         <possessionCount>1</possessionCount>
         <graphicData>

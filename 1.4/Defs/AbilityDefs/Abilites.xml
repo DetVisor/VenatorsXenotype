@@ -26,11 +26,11 @@
   
   <AbilityDef ParentName="AbilityTouchBase">
     <defName>DV_ParalyzingBite</defName>
-    <label>paralyzing bite</label>
+    <label>toxinbite</label>
     <description>Bite the flesh of the target and inject paralyzing neurotoxins that will render the target incapable of moving for a short while.</description>
     <iconPath>UI/Abilities/ParalyzingBite</iconPath>
     <stunTargetWhileCasting>true</stunTargetWhileCasting>
-	<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+	<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 	<disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
   <warmupEffecter>Impact_Toxic</warmupEffecter>
   <warmupStartSound>DeathAcidifier</warmupStartSound>
@@ -39,7 +39,7 @@
     <Ability_Duration>500</Ability_Duration>
   </statBases>
   <cooldownTicksRange>10000</cooldownTicksRange><!--The cooldown of the ability -->
-  <aiCanUse>true</aiCanUse>
+  <aiCanUse>false</aiCanUse>
 	<targetRequired>true</targetRequired>
     <verbProperties>
       <verbClass>Verb_CastAbilityTouch</verbClass>

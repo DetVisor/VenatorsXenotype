@@ -23,15 +23,14 @@
     </exclusionTags>
     <symbolPack>
       <prefixSymbols>
-        <li><symbol>blind</symbol></li>
-        <li><symbol>blur</symbol></li>
-        <li><symbol>squint</symbol></li>
-        <li><symbol>peek</symbol></li>
-        <li><symbol>cross</symbol></li>
+        <li><symbol>sharp</symbol></li>
+        <li><symbol>clear</symbol></li>
+        <li><symbol>hawk</symbol></li>
       </prefixSymbols>
       <suffixSymbols>
+        <li><symbol>shooter</symbol></li>
         <li><symbol>sighter</symbol></li>
-        <li><symbol>peeker</symbol></li>
+        <li><symbol>eyed</symbol></li>
       </suffixSymbols>
     </symbolPack>
   </GeneDef>
