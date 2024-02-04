@@ -38,7 +38,7 @@
   <statBases>
     <Ability_Duration>500</Ability_Duration>
   </statBases>
-  <cooldownTicksRange>10000</cooldownTicksRange><!--The cooldown of the ability -->
+  <cooldownTicksRange>25000</cooldownTicksRange><!--The cooldown of the ability -->
   <aiCanUse>false</aiCanUse>
 	<targetRequired>true</targetRequired>
     <verbProperties>
@@ -67,5 +67,20 @@
       </li>
     </comps>
   </AbilityDef>
+
+  <ThoughtDef>
+    <defName>DV_Paralyzed</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>DV_ParalyzingVenom</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>paralyzed</label>
+        <description>I can't.. move...</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li> 
+    </stages>
+  </ThoughtDef>
 
 </Defs>

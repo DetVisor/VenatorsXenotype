@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="HatMakeableBase">
+    <defName>DV_Apparel_HunterVisage</defName>
+    <label>hunter visage</label>
+    <description>An advanced steel mask equipped with a weak toxin filter and advanced heat-based sensors which allows the wearer to stalk prey with more stealth.\n\nThis headgear is associated with pride and power, it makes the wearer more confident and is usually worn by Venator hunters for ceremonial purposes.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/HunterVisage/HunterVisage</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <uiIconScale>1.15</uiIconScale>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>1.4</Mass>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <costList>
+        <Steel>15</Steel>
+        <ComponentIndustrial>3</ComponentIndustrial>
+      </costList>
+    <equippedStatOffsets>
+      <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">1.10</SuppressionPower>
+      <PainShockThreshold>0.05</PainShockThreshold>
+      <HuntingStealth>0.15</HuntingStealth>
+      <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/HunterVisage/HunterVisage</wornGraphicPath>
+      <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+      <layers> 
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>ToxFiltration</researchPrerequisite>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <tradeTags>
+      <li>Armor</li>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+
+</Defs>
