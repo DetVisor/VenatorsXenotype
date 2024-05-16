@@ -41,6 +41,9 @@
 	  <li>Aggression_Aggressive</li>
 	  <li>RobustDigestion</li>
     </genes>
+    <forbiddenWeaponClasses>
+      <li>ShortShots</li>
+    </forbiddenWeaponClasses>
   </XenotypeDef>
 
 </Defs>

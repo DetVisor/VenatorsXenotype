@@ -51,7 +51,7 @@
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
-      <researchPrerequisite>ToxFiltration</researchPrerequisite>
+      <researchPrerequisite>Machining</researchPrerequisite>
       <recipeUsers>
         <li>FabricationBench</li>
       </recipeUsers>
