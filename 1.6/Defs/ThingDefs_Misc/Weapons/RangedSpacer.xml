@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef MayRequire="ebsg.framework" Name="DV_LongrifleBase" ParentName="BaseHumanMakeableGun">
+    <defName>DV_Gun_PrecisionLongrifle</defName>
+    <label>precision longrifle</label>
+    <description>An advanced long-range sniper rifle. High caliber, high velocity bullets fly blindingly fast towards targets. The long range scope is only compatible with the eyes of people with the farsighted gene, and it allows the wielder to fire at extremely long ranges.n\n\Due to the weapon's sheer size and weight, it is slow to aim and hard to move with when equipped.n\n\The longrifle is employed by venator bounty hunters and assassins alike. In their hands, every shot hits. If you hear it, you weren't the target.</description>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/PrecisionLongrifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <weaponTags>
+      <li>Longrifle</li>
+    </weaponTags>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="EBSGFramework.EquipRestrictExtension">
+        <requiredGenesToEquip>
+          <li>DV_Farsighted</li>
+        </requiredGenesToEquip>
+      </li>
+    </modExtensions>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>8</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.56</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.89</AccuracyLong>
+      <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>85</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Longrifle</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>80.9</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Longrifle</defName>
+    <label>longrifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <stoppingPower>1.8</stoppingPower>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

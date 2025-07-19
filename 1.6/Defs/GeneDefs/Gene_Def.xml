@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef>
+    <defName>DV_Farsighted</defName>
+    <label>farsighted</label>
+    <iconPath>UI/Genes/Farsighted</iconPath>
+    <description>Carriers of this have adapted eyes that can see well at long ranges, almost like natural binoculars. Although their shooting accuracy is increased at long ranges, they struggle with short range encounters and find it hard to focus on near-by objects.</description>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <statFactors>
+      <ShootingAccuracyFactor_Long>1.04</ShootingAccuracyFactor_Long>
+      <ShootingAccuracyFactor_Medium>1.03</ShootingAccuracyFactor_Medium>
+      <ShootingAccuracyFactor_Short>0.97</ShootingAccuracyFactor_Short>
+      <ShootingAccuracyFactor_Touch>0.92</ShootingAccuracyFactor_Touch>
+      <MeleeHitChance>-0.3</MeleeHitChance>
+      <AimingDelayFactor>1.15</AimingDelayFactor>
+    </statFactors>
+    <biostatMet>-2</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <exclusionTags>
+      <li>ShootingAccuracy</li>
+    </exclusionTags>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>sharp</symbol></li>
+        <li><symbol>clear</symbol></li>
+        <li><symbol>hawk</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>shooter</symbol></li>
+        <li><symbol>sighter</symbol></li>
+        <li><symbol>eyed</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_HunterInstincts</defName>
+    <label>hunter instincts</label>
+    <iconPath>UI/Genes/NaturalHunter</iconPath>
+    <description>Carriers of this are genetically more dispositioned for hunting and butchering wild animals, allowing them to gather more meat from a corpse, and to do it faster as well.</description>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <statFactors>
+      <ButcheryFleshEfficiency>1.25</ButcheryFleshEfficiency>
+      <ButcheryFleshSpeed>1.12</ButcheryFleshSpeed>
+      <HuntingStealth>1.05</HuntingStealth>
+      <CookSpeed>0.8</CookSpeed>
+    </statFactors>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_ParalyzingFangs</defName>
+    <label>paralyzing fangs</label>
+    <description>Carriers of this gene have a unique set of venom-producing glands near their jaw that connect with their canine teeth; on command they can release a neurotoxin into targets they bite, temporarily paralyzing them.</description>
+    <iconPath>UI/Genes/ParalyzingFangs</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <abilities>
+      <li>DV_ParalyzingBite</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>DV_ParalyzingBite</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>biter</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>venom</symbol></li>
+        <li><symbol>poison</symbol></li>
+        <li><symbol>para</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>fang</symbol></li>
+        <li><symbol>nous</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_FacePlating</defName>
+    <label>facial plating</label>
+    <labelShortAdj>plated</labelShortAdj>
+    <description>Carriers of this gene develop hard bone-like facial plates which grant a little protection from from small arms and weapons.</description>
+    <iconPath>UI/Genes/FacePlating</iconPath>
+    <displayOrderInCategory>0</displayOrderInCategory>
+    <displayCategory>Cosmetic</displayCategory>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <biostatCpx>1</biostatCpx>
+		<statOffsets>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+		</statOffsets>
+    <renderNodeProperties>
+      <li>
+      <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+      <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>    
+      <parentTagDef>Head</parentTagDef>
+      <texPath>Things/Pawn/Humanlike/HeadAttachments/FacePlating/FacePlating</texPath>
+      <color>(255, 255, 255)</color>
+      <visibleFacing>
+        <li>East</li>
+        <li>South</li>
+        <li>West</li>
+      </visibleFacing>
+      <drawData>
+        <defaultData>
+          <layer>60</layer>
+        </defaultData>
+      </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneEarsBase">
+    <defName>DV_Ears_Downturned</defName>
+    <label>extended ears</label>
+    <description>Carriers of this gene have extended ears which can grow in a variety of ways.</description>
+    <iconPath>UI/Genes/Ears_Downturned</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>  
+       <texPaths>
+        <li>Things/Pawn/Humanlike/HeadAttachments/DownturnedEars/DownturnedEars</li>
+        <li>Things/Pawn/Humanlike/HeadAttachments/DownturnedEars/DownturnedEars2</li>
+        <li>Things/Pawn/Humanlike/HeadAttachments/DownturnedEars/DownturnedEars3</li>
+       </texPaths>
+       <colorType>Skin</colorType>
+       <parentTagDef>Head</parentTagDef>
+       <useSkinShader>true</useSkinShader>
+       <useRottenColor>true</useRottenColor>
+       <rotDrawMode>Fresh, Rotting</rotDrawMode>
+       <drawData>
+         <defaultData>
+           <layer>70</layer>
+         </defaultData>
+       </drawData>
+      </li>
+  </renderNodeProperties>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>droopy</symbol></li>
+        <li><symbol>sharp</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>ear</symbol></li>
+        <li><symbol>point</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_RedGray</defName>
+    <label>dusty red skin</label>
+    <labelShortAdj>red</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a dusty red color.</description>
+    <randomBrightnessFactor>0.2</randomBrightnessFactor>
+    <skinColorOverride>(84, 65, 75)</skinColorOverride>
+    <displayOrderInCategory>65</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>dark</symbol></li>
+        <li><symbol>red</symbol></li>
+        <li><symbol>dusty</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_BlueGray</defName>
+    <label>dusty blue skin</label>
+    <labelShortAdj>blue</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a dusty blue color.</description>
+    <randomBrightnessFactor>0.2</randomBrightnessFactor>
+    <skinColorOverride>(56, 58, 76)</skinColorOverride>
+    <displayOrderInCategory>65</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>dark</symbol></li>
+        <li><symbol>blue</symbol></li>
+        <li><symbol>dusty</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_PurpleGray</defName>
+    <label>dusty purple skin</label>
+    <labelShortAdj>purple</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a dusty purple color.</description>
+    <randomBrightnessFactor>0.2</randomBrightnessFactor>
+    <skinColorOverride>(64, 57, 77)</skinColorOverride>
+    <displayOrderInCategory>65</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>dark</symbol></li>
+        <li><symbol>purple</symbol></li>
+        <li><symbol>dusty</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_YellowGray</defName>
+    <label>dusty yellow skin</label>
+    <labelShortAdj>yellow</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a dusty yellow color.</description>
+    <randomBrightnessFactor>0.2</randomBrightnessFactor>
+    <skinColorOverride>(77, 70, 57)</skinColorOverride>
+    <displayOrderInCategory>65</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>earthy</symbol></li>
+        <li><symbol>yellow</symbol></li>
+        <li><symbol>dusty</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_BrownGray</defName>
+    <label>dusty brown skin</label>
+    <labelShortAdj>brown</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a dusty brown color.</description>
+    <randomBrightnessFactor>0.2</randomBrightnessFactor>
+    <skinColorOverride>(69, 58, 54)</skinColorOverride>
+    <displayOrderInCategory>65</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>earthy</symbol></li>
+        <li><symbol>brown</symbol></li>
+        <li><symbol>dusty</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+
+</Defs>
