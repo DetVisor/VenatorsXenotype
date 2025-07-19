@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     
-      <PawnKindDef ParentName="MercenaryEliteTierBase">
+      <PawnKindDef MayRequire="Ludeon.Rimworld.Royalty" ParentName="MercenaryEliteTierBase">
         <defName>DV_Venator_BountyHunter</defName>
         <chronologicalAgeRange>100~500</chronologicalAgeRange>
         <label>bounty hunter</label>
