@@ -2,6 +2,10 @@
 <Configuration>
   <Excluded>
     <exclude>.git</exclude>
+    <exclude>About\Screen1.png</exclude>
+    <exclude>About\Screen2.png</exclude>
+    <exclude>About\Screen3.png</exclude>
+    <exclude>About\Screen4.png</exclude>
     <exclude>Previews</exclude>
   </Excluded>
 </Configuration>
