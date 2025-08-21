@@ -9,10 +9,10 @@
     <displayCategory>Miscellaneous</displayCategory>
     <displayOrderInCategory>50</displayOrderInCategory>
     <statFactors>
-      <ShootingAccuracyFactor_Long>1.04</ShootingAccuracyFactor_Long>
-      <ShootingAccuracyFactor_Medium>1.03</ShootingAccuracyFactor_Medium>
-      <ShootingAccuracyFactor_Short>0.97</ShootingAccuracyFactor_Short>
-      <ShootingAccuracyFactor_Touch>0.92</ShootingAccuracyFactor_Touch>
+      <ShootingAccuracyFactor_Long>1.50</ShootingAccuracyFactor_Long>
+      <ShootingAccuracyFactor_Medium>1.20</ShootingAccuracyFactor_Medium>
+      <ShootingAccuracyFactor_Short>0.95</ShootingAccuracyFactor_Short>
+      <ShootingAccuracyFactor_Touch>0.90</ShootingAccuracyFactor_Touch>
       <MeleeHitChance>-0.3</MeleeHitChance>
       <AimingDelayFactor>1.15</AimingDelayFactor>
     </statFactors>

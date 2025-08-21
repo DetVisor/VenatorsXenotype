@@ -17,6 +17,8 @@
       <MaxHitPoints>80</MaxHitPoints>
       <Mass>1.4</Mass>
       <EquipDelay>1.5</EquipDelay>
+      <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
     </statBases>
     <costList>
         <Steel>15</Steel>
