@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defName>DV_ParalyzingVenom</defName>
+    <label>paralyzed</label>
+    <defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+    <description>Paralyzation caused by venom from a person with the toxinbite gene. Not deadly.</description>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <alwaysShowSeverity>true</alwaysShowSeverity>
+    <stages>
+      <li>
+        <label>mild</label>
+        <minSeverity>0.01</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.25</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>moderate</label>
+        <minSeverity>0.10</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.20</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>extreme</label>
+        <minSeverity>0.35</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerSecond">
+        <severityPerSecondRange>-0.005</severityPerSecondRange> <!-- 15 seconds per stage, for 6 stages -->
+      </li>
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>DV_ParalyzingBite</defName>
+    <label>toxinbite</label>
+    <description>Bite the flesh of the target and inject paralyzing neurotoxins that will render the target incapable of moving for a short while.</description>
+    <iconPath>UI/Abilities/ParalyzingBite</iconPath>
+    <stunTargetWhileCasting>true</stunTargetWhileCasting>
+	<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+	<disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+  <warmupEffecter>Impact_Toxic</warmupEffecter>
+  <warmupStartSound>DeathAcidifier</warmupStartSound>
+  <hostile>false</hostile>
+  <statBases>
+    <Ability_Duration>500</Ability_Duration>
+  </statBases>
+  <cooldownTicksRange>30000</cooldownTicksRange><!--The cooldown of the ability -->
+  <aiCanUse>false</aiCanUse>
+	<targetRequired>true</targetRequired>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <label>bite</label>
+      <violent>false</violent>
+      <drawAimPie>false</drawAimPie>
+      <range>11</range>
+      <warmupTime>1</warmupTime>  
+      <requireLineOfSight>false</requireLineOfSight>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetCorpses>false</canTargetCorpses>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>DV_ParalyzingVenom</hediffDef>
+        <onlyBrain>True</onlyBrain>
+        <applicableToMechs>False</applicableToMechs>
+        <goodwillImpact>-15</goodwillImpact>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <ThoughtDef>
+    <defName>DV_Paralyzed</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>DV_ParalyzingVenom</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>paralyzed</label>
+        <description>I can't.. move...</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li> 
+    </stages>
+  </ThoughtDef>
+
+</Defs>
